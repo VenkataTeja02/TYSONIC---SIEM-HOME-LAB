@@ -1,4 +1,4 @@
-# ⚡ TYSONIC SIEM v3.0
+# TYSONIC SIEM Home Lab
 
 > **Full-stack Security Information and Event Management platform** — real-time network intrusion detection, automated incident response, and threat intelligence, built with Python and Flask.
 
@@ -9,8 +9,13 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ---
+<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/fa48cc59-daa1-4a18-8726-6b9dfac2736d" />
+<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/70a077be-7e9c-4233-8208-58b9374def11" />
+<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/0fef5f68-0649-4eb7-bfac-62fcf253de51" />
+<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/4cc5965d-b232-412d-aff4-5bddfe91478e" />
 
-## 📌 Table of Contents
+
+## Table of Contents
 
 - [Features](#-features)
 - [Architecture](#-architecture)
@@ -31,7 +36,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
@@ -49,10 +54,10 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
-Kali Linux (Attacker)
+     Internet
         │
         │ Network Traffic
         ▼
@@ -91,7 +96,7 @@ Kali Linux (Attacker)
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **OS:** Ubuntu 20.04+ or Debian 11+ (tested on Ubuntu 22.04 LTS)
 - **RAM:** Minimum 4GB (8GB recommended for Elasticsearch)
@@ -335,7 +340,7 @@ sudo nano /etc/systemd/system/tysonic-siem.service
 
 ```ini
 [Unit]
-Description=TYSONIC SIEM v3.0
+Description=TYSONIC SIEM
 After=network.target elasticsearch.service
 
 [Service]
@@ -544,12 +549,11 @@ sudo python app.py
 - Set a strong random `SIEM_SECRET_KEY` in `.env`
 - Never expose port `5000` directly — put **nginx + TLS** in front
 - Never expose port `9200` (Elasticsearch) to the public internet
-- Add `.env` and `siem_data/` to `.gitignore` before pushing to GitHub
 - Run the SIEM as a non-root user (use sudo only for iptables via a wrapper)
 
 ---
 
-Built with ❤️ by Tyson &nbsp;·&nbsp; TYSONIC SIEM
+Built with ❤️ by Tyson 
 
 ---
 
