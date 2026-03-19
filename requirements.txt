@@ -1,0 +1,43 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  TYSONIC SIEM Home Lab — Python Dependencies
+#  Install: pip install -r requirements.txt
+#  Python:  3.10+
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+Flask==3.0.3
+Werkzeug==3.0.3
+
+# ── Production WSGI Server ────────────────────────────────────────────────────
+# Run with: gunicorn -w 4 -b 0.0.0.0:5000 app:app
+gunicorn==22.0.0
+
+# ── Elasticsearch Client ──────────────────────────────────────────────────────
+elasticsearch==8.13.2
+urllib3==2.2.1
+
+# ── QR Code Generation (MFA Setup — Google Authenticator) ────────────────────
+# Used in auth.py for generating QR codes for TOTP/MFA setup
+# The [pil] extra installs Pillow for PNG output
+# The svg extra is used for SVG QR output in the dashboard
+qrcode[pil]==8.0
+Pillow==10.3.0
+
+# ── Environment / Secrets ─────────────────────────────────────────────────────
+# Loads .env file — siem_env.py has a built-in fallback if not installed
+python-dotenv==1.0.1
+
+# ── Rate Limiting ─────────────────────────────────────────────────────────────
+Flask-Limiter==3.7.0
+limits==3.10.1
+
+# ── TLS / Networking ──────────────────────────────────────────────────────────
+pyOpenSSL==24.1.0
+certifi==2024.6.2
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  OPTIONAL — uncomment if you want PDF report generation
+#  (report_generator.py uses this if installed, skips PDF silently if not)
+# ─────────────────────────────────────────────────────────────────────────────
+# reportlab==4.2.0
+
