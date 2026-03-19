@@ -17,9 +17,9 @@
 
 ## Table of Contents
 
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Prerequisites](#-prerequisites)
+- Features
+- Architecture
+- Prerequisites
 - [Step 1 — Install System Tools](#step-1--install-system-tools)
 - [Step 2 — Install and Configure Elasticsearch](#step-2--install-and-configure-elasticsearch)
 - [Step 3 — Install and Configure Suricata](#step-3--install-and-configure-suricata)
