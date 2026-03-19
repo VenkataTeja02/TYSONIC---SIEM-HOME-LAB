@@ -6,7 +6,6 @@
 ![Flask](https://img.shields.io/badge/Flask-3.0-black?style=flat-square&logo=flask)
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-8.x-005571?style=flat-square&logo=elasticsearch)
 ![Suricata](https://img.shields.io/badge/Suricata-IDS-orange?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ---
 <img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/fa48cc59-daa1-4a18-8726-6b9dfac2736d" />
