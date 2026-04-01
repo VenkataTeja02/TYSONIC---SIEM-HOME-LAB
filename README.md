@@ -8,11 +8,12 @@
 ![Suricata](https://img.shields.io/badge/Suricata-IDS-orange?style=flat-square)
 
 ---
-<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/fa48cc59-daa1-4a18-8726-6b9dfac2736d" />
-<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/70a077be-7e9c-4233-8208-58b9374def11" />
-<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/0fef5f68-0649-4eb7-bfac-62fcf253de51" />
-<img width="400" height="300" alt="Screenshot" src="https://github.com/user-attachments/assets/4cc5965d-b232-412d-aff4-5bddfe91478e" />
-
+<img width="400" height="300" alt="Screenshot 2026-04-01 221304" src="https://github.com/user-attachments/assets/0cd8e178-b2c6-4f3b-a470-319144c0d711" />
+<img width="400" height="300" alt="Screenshot 2026-04-01 222328" src="https://github.com/user-attachments/assets/cc35b7a6-3760-4815-ba36-8f7ff51aa165" />
+<img width="400" height="300" alt="Screenshot 2026-04-01 222339" src="https://github.com/user-attachments/assets/f976a146-1114-4b42-934c-cb575a2f29e6" />
+<img width="400" height="300" alt="Screenshot 2026-04-01 222351" src="https://github.com/user-attachments/assets/dc96db54-9afe-4de2-8af5-64b97c3396a7" />
+<img width="400" height="300" alt="Screenshot 2026-04-01 222410" src="https://github.com/user-attachments/assets/c06b8f49-e6a1-4a13-a4d4-b953a3e432b1" />
+<img width="400" height="300" alt="Screenshot 2026-04-01 222424" src="https://github.com/user-attachments/assets/eeddb8e3-aced-415d-957c-b07f6d72c401" />
 
 ## Table of Contents
 
