@@ -818,8 +818,8 @@ button { cursor: pointer; }
 
     <!-- ══ TABS ══ -->
     <div class="auth-tabs" id="auth-tabs">
-      <button class="auth-tab active" id="tab-login-btn"    onclick="switchAuthTab('login')">🔐 Sign In</button>
-      <button class="auth-tab"        id="tab-register-btn" onclick="switchAuthTab('register')">✚ Register</button>
+      <button class="auth-tab active" id="tab-login-btn"    onclick="switchAuthTab('login')"> Sign In</button>
+      <button class="auth-tab"        id="tab-register-btn" onclick="switchAuthTab('register')"> Register</button>
     </div>
 
     <!-- ══════════════════════════════════════════════════ -->
@@ -832,7 +832,7 @@ button { cursor: pointer; }
         <div class="login-field">
           <label>Username</label>
           <div class="login-input-wrap">
-            <span class="login-input-icon">👤</span>
+            <span class="login-input-icon"></span>
             <input class="login-input" id="login-user" type="text" placeholder="Enter username"
                    autocomplete="username" onkeydown="if(event.key==='Enter')doLogin()">
           </div>
@@ -841,7 +841,7 @@ button { cursor: pointer; }
         <div class="login-field">
           <label>Password</label>
           <div class="login-input-wrap">
-            <span class="login-input-icon">🔒</span>
+            <span class="login-input-icon"></span>
             <input class="login-input" id="login-pass" type="password" placeholder="Enter password"
                    autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
             <button onclick="togglePassVis()" id="pass-eye"
@@ -871,7 +871,7 @@ button { cursor: pointer; }
       <!-- Step 2: Google Authenticator Code -->
       <div id="login-step-2" style="display:none;">
         <div style="text-align:center;margin-bottom:20px;">
-          <div style="font-size:40px;margin-bottom:8px;">📱</div>
+          <div style="font-size:40px;margin-bottom:8px;"></div>
           <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px;">Two-Factor Verification</div>
           <div id="login-mfa-username" style="font-family:var(--mono);font-size:11px;color:var(--blue);"></div>
           <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:4px;">Open Google Authenticator and enter the 6-digit code</div>
@@ -935,7 +935,7 @@ button { cursor: pointer; }
         <div class="login-field">
           <label>Username</label>
           <div class="login-input-wrap">
-            <span class="login-input-icon">👤</span>
+            <span class="login-input-icon"></span>
             <input class="login-input" id="reg-user" type="text" placeholder="Choose a username"
                    autocomplete="off" onkeydown="if(event.key==='Enter')doRegisterStep1()">
           </div>
@@ -944,7 +944,7 @@ button { cursor: pointer; }
         <div class="login-field">
           <label>Password</label>
           <div class="login-input-wrap">
-            <span class="login-input-icon">🔒</span>
+            <span class="login-input-icon"></span>
             <input class="login-input" id="reg-pass" type="password" placeholder="Min. 10 characters"
                    autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegisterStep1()">
             <button onclick="toggleRegPassVis()" id="reg-pass-eye"
@@ -955,7 +955,7 @@ button { cursor: pointer; }
         <div class="login-field">
           <label>Confirm Password</label>
           <div class="login-input-wrap">
-            <span class="login-input-icon">🔒</span>
+            <span class="login-input-icon"></span>
             <input class="login-input" id="reg-pass2" type="password" placeholder="Repeat password"
                    autocomplete="new-password" onkeydown="if(event.key==='Enter')doRegisterStep1()">
           </div>
@@ -1058,7 +1058,7 @@ button { cursor: pointer; }
 
       <!-- Register Step 4: Success -->
       <div id="reg-step-4" style="display:none;" class="reg-success">
-        <div class="reg-success-icon">✅</div>
+        <div class="reg-success-icon"></div>
         <div class="reg-success-title">Registration Complete!</div>
         <div class="reg-success-sub" id="reg-success-msg">
           Your account has been created.<br>
@@ -1253,7 +1253,7 @@ button { cursor: pointer; }
     <!-- Incident alert table -->
     <div class="panel">
     <div class="filter-bar">
-      <input class="search" id="search-input" placeholder="🔍  Search alerts…" oninput="renderTable()">
+      <input class="search" id="search-input" placeholder="Search alerts…" oninput="renderTable()">
       <select class="sel" id="filter-sev" onchange="renderTable()">
         <option value="">All Severity</option>
         <option>Critical</option><option>High</option><option>Medium</option><option>Low</option>
@@ -1268,13 +1268,13 @@ button { cursor: pointer; }
           onclick="setAlertViewMode('attacks')"
           style="padding:7px 13px;font-family:var(--mono);font-size:10px;letter-spacing:.5px;border:none;cursor:pointer;transition:all .15s;
                  background:rgba(248,113,113,.12);border-right:1px solid var(--border);color:var(--c-high);">
-          ⚔ ATTACKS ONLY
+           ATTACKS ONLY
         </button>
         <button id="view-btn-all"
           onclick="setAlertViewMode('all')"
           style="padding:7px 13px;font-family:var(--mono);font-size:10px;letter-spacing:.5px;border:none;cursor:pointer;transition:all .15s;
                  background:transparent;color:var(--muted);">
-          📋 ALL LOGS
+           ALL LOGS
         </button>
       </div>
       <span class="count-lbl" id="count-lbl"></span>
@@ -1481,7 +1481,7 @@ button { cursor: pointer; }
           <span style="font-family:var(--mono);font-size:13px;font-weight:700;color:var(--text);"> GENERATED REPORTS</span>
           <span class="tab-badge" id="reports-count-lbl" style="display:inline-block;">0 reports</span>
         </div>
-        <button class="btn btn-red" style="font-size:10px;" onclick="clearReportHistory()">🗑 CLEAR ALL</button>
+        <button class="btn btn-red" style="font-size:10px;" onclick="clearReportHistory()"> CLEAR ALL</button>
       </div>
       <!-- Report list header -->
       <div style="display:grid;grid-template-columns:120px 1fr 90px 120px 130px 130px;gap:10px;padding:8px 16px;background:var(--bg);border-bottom:1px solid var(--border);">
@@ -1564,7 +1564,7 @@ button { cursor: pointer; }
 <div class="modal-bg" id="modal-change-password" style="display:none;" onclick="if(event.target===this)closeChangePassword()">
   <div class="modal" style="max-width:420px;">
     <div class="modal-head">
-      <span>🔒 Change Password</span>
+      <span>Change Password</span>
       <button class="modal-close" onclick="closeChangePassword()">✕</button>
     </div>
     <div style="padding:20px;">
@@ -2166,7 +2166,7 @@ function renderReports() {
       <div style="font-family:var(--mono);font-size:10px;color:var(--dim);">${new Date(r.generated).toLocaleDateString()}</div>
       <div>
         ${r.html
-          ? `<a href="${API}${r.html}" target="_blank" class="btn btn-blue" style="text-decoration:none;font-size:10px;padding:5px 10px;">🌐 View HTML</a>`
+          ? `<a href="${API}${r.html}" target="_blank" class="btn btn-blue" style="text-decoration:none;font-size:10px;padding:5px 10px;">View HTML</a>`
           : '<span style="color:var(--dim);font-size:11px;">—</span>'}
       </div>
       <div style="display:flex;gap:6px;align-items:center;">
@@ -3295,7 +3295,7 @@ function renderUserBadge() {
       </div>
       <div>
         <div class="user-name">${currentUser.username}</div>
-        <div class="user-role">${currentUser.role.toUpperCase()} ${currentUser.mfa_enabled ? '🛡' : '⚠️ MFA OFF'}</div>
+        <div class="user-role">${currentUser.role.toUpperCase()} ${currentUser.mfa_enabled ? '🛡' : 'MFA OFF'}</div>
       </div>
       <span style="color:var(--muted);font-size:10px;margin-left:4px;">▾</span>
     </div>
@@ -3311,13 +3311,13 @@ function renderUserBadge() {
       </div>
       <div style="padding:6px;">
         <div onclick="showSessionInfo()" class="menu-item" onmouseover="this.classList.add('menu-hover')" onmouseout="this.classList.remove('menu-hover')">
-          <span>🔑</span> Session Info
+          <span></span> Session Info
         </div>
         <div onclick="showChangePassword();toggleUserMenu();" class="menu-item" onmouseover="this.classList.add('menu-hover')" onmouseout="this.classList.remove('menu-hover')">
-          <span>🔒</span> Change Password
+          <span></span> Change Password
         </div>
         <div onclick="toggleTheme();toggleUserMenu();" class="menu-item" onmouseover="this.classList.add('menu-hover')" onmouseout="this.classList.remove('menu-hover')">
-          <span id="menu-theme-icon">🌙</span> <span id="menu-theme-label">Switch to Light Mode</span>
+          <span id="menu-theme-icon"></span> <span id="menu-theme-label">Switch to Light Mode</span>
         </div>
         <div style="height:1px;background:var(--border);margin:4px 0;"></div>
         <div onclick="doLogout()" class="menu-item" style="color:var(--c-high)!important;" onmouseover="this.style.background='rgba(248,113,113,.08)'" onmouseout="this.style.background=''">
@@ -3347,7 +3347,7 @@ function showSessionInfo() {
     : '<span style="color:var(--c-med);">⚠ MFA Not Enabled</span>';
   showNotif(`
     <div style="font-family:var(--mono);font-size:11px;">
-      <div style="color:var(--text);font-weight:700;margin-bottom:6px;">🔑 Session Info</div>
+      <div style="color:var(--text);font-weight:700;margin-bottom:6px;">Session Info</div>
       <div>User: <span style="color:var(--blue);">${currentUser.username}</span></div>
       <div>Role: <span style="color:${currentUser.color};">${currentUser.role}</span></div>
       <div>Permissions: ${currentUser.canWrite ? '<span style="color:var(--c-low);">Read + Write</span>' : '<span style="color:var(--c-med);">Read Only</span>'}</div>
@@ -3391,7 +3391,7 @@ async function doChangePassword() {
     });
     if (r && r.ok) {
       closeChangePassword();
-      showNotif('✅ Password changed successfully. Please log in again.', 'success', 4000);
+      showNotif('Password changed successfully. Please log in again.', 'success', 4000);
       setTimeout(() => doLogout(), 2000);
     } else {
       showErr((r && r.error) ? r.error : 'Failed to change password. Check your current password.');
@@ -3850,7 +3850,7 @@ async function loadBlockedIPs() {
 
   el.innerHTML = data.map(ip => `
     <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 16px;border-bottom:1px solid var(--border2);">
-      <span style="font-family:var(--mono);font-size:12px;color:var(--c-high);">🚫 ${ip}</span>
+      <span style="font-family:var(--mono);font-size:12px;color:var(--c-high);"> ${ip}</span>
       <button class="btn btn-ghost" style="font-size:10px;padding:3px 8px;color:var(--c-low);" onclick="unblockIP('${ip}')">UNBLOCK</button>
     </div>`).join('');
 }
