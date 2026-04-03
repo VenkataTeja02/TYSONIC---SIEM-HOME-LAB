@@ -220,8 +220,11 @@ def reset(dry_run: bool = False):
                 conn = sqlite3.connect(path)
                 for table in tables:
                     conn.execute(f"DELETE FROM {table}")
-                    conn.execute("VACUUM")
                 conn.commit()
+                conn.close()
+                # VACUUM must run outside of a transaction
+                conn = sqlite3.connect(path)
+                conn.execute("VACUUM")
                 conn.close()
                 ok(f"{path.name} — all rows deleted")
                 cleared += 1
